@@ -1,0 +1,95 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Страница товара</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="ProductPageStyle.css" />
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <script src="ProductPageScripts.js"></script>
+</head>
+
+<body>
+    <h1 class="Logo">Get Ready</h1>
+    <div class="BodyContainer">
+        <nav>
+            <ul class="Menu-Main">
+                <li><a href="index.html">О нас</a></li>
+                <li><a href="PaymentAndDeliverance.html">Доставка и оплата</a></li>
+                <li><a href="Catalog.html">Каталог</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="Product">
+        <img id="Image" src="https://www.blackspin.gr/image/cache/catalog/product/STAR%20WARS,%20Galactic%20Empire,%20T-Shirt-600x600.png"
+            height="500" width="500">
+        <div class="Information">
+            <p class="NameOfProduct">Star Wars</p>
+            <p class="Price">350 ₴</p>
+            <p class="Description">
+                Бренд Piazza Italia был основан сравнительно недавно, в 1993 году. Основатель решил создать универсальный, подходящий для
+                всех категорий потребителей бренд, который одинаково будет нравится, как мужчинам, так и женщинам. Немного
+                позже была выпущена первая коллекция детской одежды, которая неожиданно для создателя произвела фурор на
+                итальянском рынке одежды. Принципами компании являются неподражаемость, жизнерадостность и доступность. Одежда
+                должна приносить в жизни покупателей и окружающих позитивные чувства при виде красочных и не повторных моделей.
+            </p>
+        </div>
+        <button id="T-Shirt" onclick="ChangeTShirt();">T-Shirt</button>
+        <button id="SweatShirt" onclick="ChangeSweatShirt();">SweatShirt</button>
+        <button id="Hoody" onclick="ChangeHoody();">Hoody</button>
+        <br>
+        <button id="Buy" onclick="BuyProduct();">Купить</button>
+    </div>
+
+    <div id="Overlay">
+        <form action="" class="OrderForm">
+            <div class="Form">
+                <p><input type="submit" class="Close" value="X" onclick="CloseOrder();"></p>
+                <br>
+                <h2>Оформление заказа</h2>
+                <div class="FormContainer">
+                    <h3>Ваше имя и номер телефона:</h3>
+                    <p><input type="text" name="your-name" placeholder="Имя,Номер телефона" required></p>
+                    <h3>Ваш размер :</h3>
+                    <p><input type="text" name="your-name" placeholder="Европейский стандарт" required></p>
+                    <h3>Кол-во вещей :</h3>
+                    <p>
+                        <select name="NumberOfClothes">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </p>
+                    <h3>Вид одежды :</h3>
+                    <p>
+                        <select name="TypesOfProducts">
+                            <option value="T-Shirt">Футболка</option>
+                            <option value="SweatShirt">Свитшот</option>
+                            <option value="Hoody">Толстовка</option>
+                        </select>
+                    </p>
+                    <h3>Коллекция одежды :</h3>
+                    <p>
+                        <select name="TypesOfProducts">
+                            <option value="StarWars">Star Wars</option>
+                            <option value="LeJaconda">Le Jaconda</option>
+                            <option value="Rockstar">Rockstar</option>
+                        </select>
+                    </p>
+                    <p><input type="submit" value="Я подтверждаю"></p>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

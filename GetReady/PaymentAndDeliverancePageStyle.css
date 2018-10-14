@@ -1,0 +1,114 @@
+.Logo 
+{ 
+  font-family: 'Dancing Script', cursive; 
+  position: relative; 
+  font-size: 50px; 
+  text-align: center; 
+} 
+ 
+.Menu-Main  
+{ 
+  list-style: none; 
+  margin: 10px 0 5px; 
+  padding: 10px 0 5px; 
+  text-align: center; 
+} 
+ 
+.Menu-Main li {display: inline-block;} 
+.Menu-Main li:after  
+{ 
+  content: "|"; 
+  color: #000000; 
+  display: inline-block; 
+  vertical-align: top; 
+} 
+ 
+.Menu-Main li:last-child:after {content: none;} 
+.Menu-Main a  
+{ 
+  text-decoration: none; 
+  font-family: 'Yanone Kaffeesatz', sans-serif; 
+  letter-spacing: 4px; 
+  position: relative; 
+  text-align: center; 
+  padding-bottom: 20px; 
+  margin: 0 50px 0 30px; 
+  font-size: 25px; 
+  display: inline-block; 
+  color: #000000; 
+} 
+ 
+.Menu-Main a, .Menu-Main a:visited {color: #000000;} 
+.Menu-Main a:before, 
+.Menu-Main a:after  
+{ 
+  content: ""; 
+  position: absolute; 
+  height: 6px; 
+  top: auto; 
+  right: 50%; 
+  bottom: -5px; 
+  left: 50%; 
+  background: #000000; 
+  transition: .8s; 
+} 
+ 
+.Menu-Main a:hover:before, .Menu-Main .current:before {left: 0;} 
+.Menu-Main a:hover:after, .Menu-Main .current:after {right: 0;}    
+ 
+@media (max-width: 550px)  
+{ 
+.Menu-Main {padding-top: 0;} 
+.Menu-Main li {display: block;} 
+.Menu-Main li:after {content: none;} 
+.Menu-Main a { 
+  padding: 25px 0 20px;  
+  margin: 0 30px; 
+} 
+} 
+
+.Deliverance
+{
+  position: relative;
+  float: left;
+  text-align: center;
+  font-family: 'Open Sans Condensed', sans-serif; 
+  font-size: 30px;
+  width: 49%;
+}
+
+.DeliveranceInformation
+{
+  font-size: 20px;
+  text-align: left;
+  margin-left: 30%;
+}
+
+.Deliverance img
+{
+  max-width: 50%;
+  height: auto;
+}
+
+.Payment
+{
+  position: relative;
+  float: right;
+  text-align: center;
+  font-family: 'Open Sans Condensed', sans-serif; 
+  font-size: 30px;
+  width: 49%;
+}
+
+.PaymentInformation
+{
+  font-size: 20px;
+  text-align: right;
+  margin-right: 30%;
+}
+
+.Payment img
+{
+  max-width: 35.8%;
+  height: auto;
+}
