@@ -168,7 +168,7 @@
 {
   position: relative;
   max-width: 320px;
-  margin: 50px auto 0;
+  margin: 50px auto;
   text-align: center;
 }
 
@@ -181,19 +181,9 @@
 .Form 
 {
   padding: 0 40px 10px;
-  margin-top: 45px;
   background: #ffffff;
   border-radius: 2px;
   box-shadow: 0 0 6px 1px rgba(0,0,0,.1);
-}
-
-.Form h2 
-{
-  color: #000000;
-  font-weight: 300;
-  font-size: 20px;
-  text-transform: uppercase;
-  font-family: 'Open Sans Condensed', sans-serif; 
 }
 
 .FormContainer 
@@ -219,7 +209,7 @@
 .FormContainer h3 
 {
   font-family: 'Open Sans Condensed', sans-serif; 
-  font-size: 22px;
+  font-size: 18px;
   color: #000000;
   font-weight: normal;
 }
@@ -232,10 +222,11 @@
   padding: 0 10px;
   background: #ffffff;
   border: 1px solid #DDDDDD;
-  font-size: 20px;
+  font-size: 18px;
   font-family: 'Open Sans Condensed', sans-serif;
   color: #000000;
   outline: none;
+  cursor: pointer;
 }
 
 .FormContainer input 
@@ -251,7 +242,6 @@
 
 .FormContainer input[type="submit"] 
 {
-  margin: 20px 0;
   padding: 0 10px; 
   font-size: 20px;
   text-transform: uppercase;
@@ -262,10 +252,11 @@
 
 .Close
 {
+  margin-right: 10px;
+  margin-top: 5px;
+  float: right;
   overflow: hidden;
   cursor: pointer;
-  margin-left: 130px;
-  position: absolute;
-  border-color: rgba(0,0,0,0.01);
-  background-color: rgba(255,255,255,0.001);
+  font-size: 30px;
+  color: #ffffff;
 }
