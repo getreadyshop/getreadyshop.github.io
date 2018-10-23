@@ -69,46 +69,45 @@
 
 .Deliverance
 {
-  position: relative;
+  margin-left: 16%;
+  width: 30%;
   float: left;
-  text-align: center;
   font-family: 'Open Sans Condensed', sans-serif; 
-  font-size: 30px;
-  width: 49%;
+  font-size: 23px;
+  text-align: left;
+  position: relative;
 }
 
-.DeliveranceInformation
+.Paymant
 {
-  font-size: 20px;
-  text-align: left;
-  margin-left: 30%;
+  margin-right: 16%;
+  float: right;
+  width: 30%;
+  font-family: 'Open Sans Condensed', sans-serif; 
+  font-size: 23px;
+  text-align: right;
+  position: relative;
 }
 
 .Deliverance img
 {
-  max-width: 50%;
+  width: 45%;
   height: auto;
 }
 
-.Payment
+.Paymant img
 {
-  position: relative;
-  float: right;
-  text-align: center;
-  font-family: 'Open Sans Condensed', sans-serif; 
-  font-size: 30px;
-  width: 49%;
-}
-
-.PaymentInformation
-{
-  font-size: 20px;
-  text-align: right;
-  margin-right: 30%;
-}
-
-.Payment img
-{
-  max-width: 35.8%;
+  width: 36.75%;
   height: auto;
+}
+
+@media screen and (max-width: 992px)
+{
+  .Paymant, .Deliverance
+  {
+    width: 63.5%;
+    text-align: center;
+    float: none;
+    margin: 0 auto;
+  }
 }

@@ -148,9 +148,9 @@
 
 .Cooperation
 {
-  margin-top: 8%;
+  margin-top: 5%;
   margin-left: 16%;
-  width: 25%;
+  width: 30%;
   float: left;
   font-family: 'Open Sans Condensed', sans-serif; 
   font-size: 20px;
@@ -160,12 +160,23 @@
 
 .Contacts
 {
-  margin-top: 8%;
+  margin-top: 5%;
   margin-right: 16%;
   float: right;
-  width: 25%;
+  width: 30%;
   font-family: 'Open Sans Condensed', sans-serif; 
   font-size: 20px;
   text-align: right;
   position: relative;
+}
+
+@media screen and (max-width: 992px)
+{
+  .Contacts, .Cooperation
+  {
+    width: 63.5%;
+    text-align: center;
+    float: none;
+    margin: 0 auto;
+  }
 }

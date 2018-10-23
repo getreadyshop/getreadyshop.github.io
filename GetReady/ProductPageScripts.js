@@ -15,7 +15,7 @@ function ChangeSweatShirt()
 
 function ChangeHoody()
 {
-    document.getElementById("Image").src="https://howayte.com/wp-content/uploads/2017/11/starwars-black-600x600.png";
+    document.getElementById("Image").src="https://swoopstore.co.uk/wp-content/uploads/Star-Wars-Darth-Vader-Hoodie-02-600x600.jpg";
 };
 
 function BuyProduct() 
