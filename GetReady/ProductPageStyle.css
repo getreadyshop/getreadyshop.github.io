@@ -80,7 +80,7 @@
   float: left;
   max-width: 100%;
   height: auto;
-  padding-right: 90px;
+  margin-right: 90px;
 }
 
 .Information
@@ -259,4 +259,12 @@
   cursor: pointer;
   font-size: 25px;
   color: #ffffff;
+}
+
+@media screen and (max-width: 600px)
+{
+  #T-Shirt,#SweatShirt,#Hoody,#Buy
+  {
+    margin: 10px auto;
+  }
 }
