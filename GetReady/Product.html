@@ -49,13 +49,13 @@
 
     <div id="Overlay">
         <a class="Close" onclick="CloseOrder();">&#10006;</a>
-        <form action="MessageHandler.php" method="post" class="OrderForm">
+        <form action="MessageHandler.php" method="POST" target="_blank" class="OrderForm">
             <div class="Form">
                 <div class="FormContainer">
                     <h3>Ваше имя и номер телефона:</h3>
-                    <p><input type="text" name="your-name" placeholder="Имя,Номер телефона" required></p>
+                    <p><input type="text" name="Name" placeholder="Имя,Номер телефона" required></p>
                     <h3>Ваш размер :</h3>
-                    <p><input type="text" name="your-name" placeholder="Европейский стандарт" required></p>
+                    <p><input type="text" name="Size" placeholder="Европейский стандарт" required></p>
                     <h3>Кол-во вещей :</h3>
                     <p>
                         <select name="NumberOfClothes">
@@ -82,7 +82,7 @@
                             <option value="Rockstar">Rockstar</option>
                         </select>
                     </p>
-                    <p><input type="submit" value="Я подтверждаю"></p>
+                    <p><input type="submit" value="Я подтверждаю" name="Submit"></p>
                 </div>
             </div>
         </form>
