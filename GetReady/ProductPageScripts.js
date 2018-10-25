@@ -1,8 +1,3 @@
-function BuyProduct() 
-{ 
-    alert('Вы купили товар'); 
-};
-
 function ChangeTShirt()
 {
     document.getElementById("Image").src="https://www.blackspin.gr/image/cache/catalog/product/STAR%20WARS,%20Galactic%20Empire,%20T-Shirt-600x600.png";
@@ -27,3 +22,18 @@ function CloseOrder()
 {
     document.getElementById("Overlay").style.display = "none";
 };
+
+function ShowAndHideMenu(id) {
+
+    display = document.getElementById(id).style.display;
+
+    if (display == 'none') 
+    {
+
+        document.getElementById(id).style.display = 'block';
+    } else 
+    {
+
+        document.getElementById(id).style.display = 'none';
+    }
+}

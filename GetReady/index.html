@@ -11,18 +11,22 @@
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" >
     <script src="MainPageScripts.js"></script>
 </head>
 
 <body>
     <h1 class="Logo">Get Ready</h1>
+    <button id="MenuButton" onclick="ShowAndHideMenu('MenuBlock');"><i class="fa fa-bars" style="font-size: 24px;"></i></button>
     <div class="BodyContainer">
         <nav>
-            <ul class="Menu-Main">
-                <li><a href="index.html">О нас</a></li>
-                <li><a href="PaymentAndDeliverance.html">Доставка и оплата</a></li>
-                <li><a href="Catalog.html">Каталог</a></li>
-            </ul>
+            <div id="MenuBlock">
+                <ul class="Menu-Main">
+                    <li><a href="index.html">О нас</a></li>
+                    <li><a href="PaymentAndDeliverance.html">Доставка и оплата</a></li>
+                    <li><a href="Catalog.html">Каталог</a></li>
+                </ul>
+            </div>
         </nav>
 
         <div class="ImageContainer">
@@ -54,22 +58,20 @@
             <label class="Dots" id="Dot2" for="Image2"></label>
             <label class="Dots" id="Dot3" for="Image3"></label>
         </div>
-        
+
         <div class="Board">
             <p class="AboutUs">
-                Привет! Мы - Get Ready. Это как твоя подруга,только ещё круче. Потому что мы - девочки,которые
-                помогут тебе выбрать или создать одежду,в которой ты проживешь яркие события своей жизни и получишь море
-                незабываемых эмоций. Если ты уже готова к незабываемому путешествию,мы ждем тебя,очень-очень. Добро пожаловать
-                в наш #badgirlsclub. Обнимаем и посылаем воздушные поцелуи,Get Ready.</p>
+                Привет! Мы - Get Ready. Это как твоя подруга,только ещё круче. Потому что мы - девочки,которые помогут тебе выбрать или создать
+                одежду,в которой ты проживешь яркие события своей жизни и получишь море незабываемых эмоций. Если ты уже
+                готова к незабываемому путешествию,мы ждем тебя,очень-очень. Добро пожаловать в наш #badgirlsclub. Обнимаем
+                и посылаем воздушные поцелуи,Get Ready.</p>
             <div class="AdditionalInformation">
                 <p class="Cooperation">
-                    <br>
-                    Если Вы хотите как-то сотрудничать с нашим интернет-магазином,<br>то пишите нам на почту ,мы будем
+                    <br> Если Вы хотите как-то сотрудничать с нашим интернет-магазином,<br>то пишите нам на почту ,мы будем
                     рады новым знакомствам, <br> а также взаимовыгодному сосуществованию.
                 </p>
                 <p class="Contacts">
-                    <br>
-                    Наша почта : getready@gmail.com<br> Наш адрес : ул.Малиновского 2В
+                    <br> Наша почта : getready@gmail.com<br> Наш адрес : ул.Малиновского 2В
                     <br> Наш номер : +38065263764
                 </p>
             </div>
