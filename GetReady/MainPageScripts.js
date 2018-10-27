@@ -1,7 +1,6 @@
-var Preloader = document.getElementById('Preloader');
-
-window.addEventListener('load',function() {
-    Preloader.style.display = 'none';
+window.addEventListener('load',function(){
+    var Loading = document.getElementById("Overlay");
+    this.document.body.removeChild(Loading);
 });
 
 function ShowAndHideMenu(id) {

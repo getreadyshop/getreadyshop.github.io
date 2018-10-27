@@ -237,3 +237,67 @@
     display: none;
   }
 }
+
+#Loading
+{
+  position: absolute;
+  text-align: center;
+  margin-top: 40vh;
+  font-family: 'Dancing Script', cursive;
+  font-size: 70px;
+}
+
+#Loading::before 
+{ 
+  content: ''; 
+  position: fixed; 
+  background: white; 
+} 
+ 
+#Loading::after 
+{ 
+  content: ''; 
+  position: absolute;
+  display: block; 
+  top: 53%;
+  left: 33.3%; 
+  width: 33.3%; 
+  height: 2px; 
+  background: rgb(0, 0, 0); 
+  z-index: 2; 
+  transform-origin: left; 
+  transform: scaleX(0); 
+  animation: Animation 3s infinite alternate; 
+} 
+ 
+@keyframes Animation 
+{ 
+    0% 
+    { 
+        transform: translate(0) scaleX(0); 
+        transform-origin: left; 
+        left: 33.3%; 
+        right: auto; 
+    } 
+    45% 
+    { 
+        transform: translate(0) scaleX(1); 
+        transform-origin: left; 
+        left: 33.3%; 
+        right: auto; 
+    } 
+    50% 
+    { 
+        transform: translate(0) scaleX(1); 
+        transform-origin: right; 
+        left: auto; 
+        right: 33.3%; 
+    } 
+    100% 
+    { 
+        transform: translate(0) scaleX(0); 
+        transform-origin: right; 
+        left: auto; 
+        right: 33.3%; 
+    } 
+}
