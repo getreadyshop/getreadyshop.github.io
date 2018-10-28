@@ -14,15 +14,15 @@
   text-align: center; 
 } 
  
-.Menu-Main li {display: inline-block;} 
-.Menu-Main li:after  
-{ 
-  content: "|"; 
-  color: #000000; 
-  display: inline-block; 
-  vertical-align: top; 
-} 
- 
+.Menu-Main li {display: inline-block;}
+.Menu-Main li:after 
+{
+  content: "|";
+  color: #000000;
+  font-size: 30px;
+  display: inline-block;
+}
+
 .Menu-Main li:last-child:after {content: none;} 
 .Menu-Main a  
 { 

@@ -19,8 +19,8 @@
 {
   content: "|";
   color: #000000;
+  font-size: 30px;
   display: inline-block;
-  vertical-align: top;
 }
 
 .Menu-Main li:last-child:after {content: none;}
