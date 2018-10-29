@@ -6,6 +6,11 @@
   text-align: center;
 }
 
+#MenuBlock
+{
+  margin-left: 40px;
+}
+
 .Menu-Main 
 {
   list-style: none;
@@ -70,7 +75,6 @@
 .ImageContainer
 {
   padding-top: 10px;
-  margin-left: -40px;
 }
 
 .ImageContainer ul,
@@ -148,6 +152,12 @@
 
   #MenuBlock
   {
+    margin-right: 40px;
     display: none;
+  }
+
+  .ImageContainer
+  {
+    margin-left: -40px;
   }
 }

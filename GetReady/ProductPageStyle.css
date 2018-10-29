@@ -6,6 +6,11 @@
   text-align: center; 
 } 
  
+#MenuBlock
+{
+  margin-left: 40px;
+}
+
 .Menu-Main  
 { 
   list-style: none; 
@@ -293,6 +298,7 @@
 
   #MenuBlock
   {
+    margin-right: 40px;
     display: none;
   }
 }
