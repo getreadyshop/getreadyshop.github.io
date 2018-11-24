@@ -11,12 +11,14 @@
     <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" >
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="ProductPageScripts.js"></script>
 </head>
 
 <body>
-    <h1 class="Logo">Get Ready</h1>
+    <a href="index.html" class="HeaderUrl">
+        <h1 class="Logo">Get Ready</h1>
+    </a>
     <button id="MenuButton" onclick="ShowAndHideMenu('MenuBlock');"><i class="fa fa-bars" style="font-size: 24px;"></i></button>
     <div class="BodyContainer">
         <nav>
@@ -34,7 +36,7 @@
                 height="500" width="500">
             <div class="Information">
                 <p class="NameOfProduct">Star Wars</p>
-                <p class="Price">350 ₴</p>
+                <p id="Price">350 ₴</p>
                 <p class="Description">
                     Бренд Piazza Italia был основан сравнительно недавно, в 1993 году. Основатель решил создать универсальный, подходящий для
                     всех категорий потребителей бренд, который одинаково будет нравится, как мужчинам, так и женщинам. Немного
@@ -46,7 +48,7 @@
             </div>
             <button id="T-Shirt" onclick="ChangeTShirt();">T-Shirt</button>
             <button id="SweatShirt" onclick="ChangeSweatShirt();">SweatShirt</button>
-            <button id="Hoody" onclick="ChangeHoody();">Hoody</button>
+            <button id="Hoodie" onclick="ChangeHoodie();">Hoodie</button>
             <br>
             <button id="Buy" onclick="BuyProduct();">Купить</button>
         </div>
@@ -75,7 +77,7 @@
                             <select name="TypesOfProducts">
                                 <option value="T-Shirt">Футболка</option>
                                 <option value="SweatShirt">Свитшот</option>
-                                <option value="Hoodie">Толстовка</option>
+                                <option value="Hoodie">Худи</option>
                             </select>
                         </p>
                         <h3>Принт :</h3>
