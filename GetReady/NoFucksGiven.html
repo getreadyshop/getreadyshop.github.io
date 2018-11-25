@@ -1,0 +1,95 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Страница товара</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="NoFucksGiven.css" />
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="NoFucksGiven.js"></script>
+</head>
+
+<body>
+    <a href="index.html" class="HeaderUrl">
+        <h1 class="Logo">Get Ready</h1>
+    </a>
+    <button id="MenuButton" onclick="ShowAndHideMenu('MenuBlock');"><i class="fa fa-bars" style="font-size: 24px;"></i></button>
+    <div class="BodyContainer">
+        <nav>
+            <div id="MenuBlock">
+                <ul class="Menu-Main">
+                    <li><a href="index.html">О нас</a></li>
+                    <li><a href="PaymentAndDeliverance.html">Доставка и оплата</a></li>
+                    <li><a href="Catalog.html">Каталог</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="Product">
+            <img id="Image" src="Photos/nfgp.jpg"
+                height="500" width="500">
+            <div class="Information">
+                <p class="NameOfProduct">No Fucks Given</p>
+                <p id="Price">350 ₴</p>
+                <p class="Description">
+                    Бренд Piazza Italia был основан сравнительно недавно, в 1993 году. Основатель решил создать универсальный, подходящий для
+                    всех категорий потребителей бренд, который одинаково будет нравится, как мужчинам, так и женщинам. Немного
+                    позже была выпущена первая коллекция детской одежды, которая неожиданно для создателя произвела фурор
+                    на итальянском рынке одежды.
+                    <br><br>
+                    Состав : 80% хлопок и 20% эластан.
+                </p>
+            </div>
+            <br>
+            <button id="Buy" onclick="BuyProduct();">Купить</button>
+        </div>
+
+        <div id="Overlay">
+            <a class="Close" onclick="CloseOrder();">&#10006;</a>
+            <form action="" method="post" target="_blank" class="OrderForm">
+                <div class="Form">
+                    <div class="FormContainer">
+                        <h3>Ваше имя и номер телефона:</h3>
+                        <p><input type="text" name="Name" required></p>
+                        <h3>Ваш размер :</h3>
+                        <p><input type="text" name="Size" required></p>
+                        <h3>Кол-во вещей :</h3>
+                        <p>
+                            <select name="NumberOfClothes">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </p>
+                        <h3>Вид одежды :</h3>
+                        <p>
+                            <select name="TypesOfProducts">
+                                <option value="T-Shirt">Футболка</option>
+                                <option value="SweatShirt">Свитшот</option>
+                                <option value="Hoodie">Худи</option>
+                            </select>
+                        </p>
+                        <h3>Принт :</h3>
+                        <p>
+                            <select name="TypesOfProducts">
+                                <option value="StarWars">Star Wars</option>
+                                <option value="LeJaconda">Le Jaconda</option>
+                                <option value="Rockstar">Rockstar</option>
+                            </select>
+                        </p>
+                        <p><input type="submit" value="Заказать" name="Submit"></p>
+                    </div>
+                </div>
+            </form>
+        </div>
+</body>
+
+</html>
