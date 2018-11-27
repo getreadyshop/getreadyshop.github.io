@@ -113,7 +113,7 @@
   margin-right: -10px;
 }
 
-@media screen and (max-width : 1920px)
+@media screen and (device-width : 1920px)
 {
   .Logo 
   { 
@@ -168,5 +168,18 @@
   {
     margin-right: 40px;
     display: none;
+  }
+}
+
+@media screen and (device-width: 1440px)
+{
+  .Logo
+  {
+    margin-left: 0px;
+  }
+
+  #MenuBlock
+  {
+    margin-left: 40px;
   }
 }
