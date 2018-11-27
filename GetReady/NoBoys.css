@@ -311,9 +311,13 @@
 
 @media screen and (max-width: 992px)
 {
+  .Logo
+  {
+    margin-left: -20px;
+  }
   .Menu-Main
   {
-    margin-left: -10px;
+    margin-right: -10px;
   }
 }
 
