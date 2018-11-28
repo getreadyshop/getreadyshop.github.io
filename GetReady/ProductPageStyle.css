@@ -309,14 +309,6 @@
   }
 }
 
-@media screen and (max-width: 992px)
-{
-  .Logo,.Menu-Main
-  {
-    margin-left: 5px;
-  }
-}
-
 @media screen and (device-width : 1920px)
 {
   .Logo 
