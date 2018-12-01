@@ -91,6 +91,7 @@
   float: left;
   max-width: 100%;
   height: auto;
+  margin-top: 70px;
   margin-right: 90px;
 }
 
@@ -101,15 +102,15 @@
 }
 
 .Description
-{ 
+{
   text-align: center;
   font-family: 'Open Sans Condensed', sans-serif; 
-  font-size: 20px; 
+  font-size: 19px; 
 } 
 
 .NameOfProduct 
 { 
-  font-family: 'Dancing Script', cursive; 
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 40px; 
 } 
  
